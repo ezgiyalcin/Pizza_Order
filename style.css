@@ -1,0 +1,274 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+
+body{
+    background-color: #F6ECEC;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+
+}
+.maincontainer{
+    width: 80%;
+    height: 700px;
+    background-color: white;
+    border-radius: 60px;
+    position: relative;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    height: 75px;
+    width: 100%;
+    padding: 0 50px;
+    position: sticky;
+}
+.logo{
+    width: 90px;
+    
+}
+.nav2{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav a{
+    font-weight: 400;
+    color: #161616;
+}
+
+.active {
+    color: #EC0000;
+}
+
+.signIn{
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+.responsive{
+    display: none ; 
+}
+.bannerContainer{
+   
+    width: 100%;
+    height: 200px;
+    display: flex;
+    
+    object-fit: fill;
+}
+.bannerLeft{
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   justify-content: center;
+   gap: 20px;
+  
+
+}
+
+.bannerLeft h1{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.bannerLeft p{
+    font-weight: 500;
+}
+
+.orderButton{
+    box-shadow: -10px 20px 40px 0 rgba(236, 0, 0, 0.16);
+}
+.bannerRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(
+        to left ,
+        rgba(255, 255, 255, 0) 60%,
+        hsl(0, 0%, 100%) ,
+        white 
+    ),
+    url(/assets/Images/margherita-pizza.png);
+ background-position: center;
+ background-size: cover;
+}
+    
+ 
+/*  .bannerRight img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain; */
+ 
+    
+ 
+.recommendedMenu{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #00240F;
+}
+
+.mark1{
+    position: absolute;
+    top:55%;
+    width:100px;
+    left: -50px;
+    
+}
+.mark2{
+    position: absolute;
+    top:88%;
+    width:75px;
+    left: -35px;
+    z-index: -1;
+}
+.mark3{
+    position: absolute;
+    top:-5%;
+    width:40px;
+    left: 200px;
+}
+.mark4{
+    position: absolute;
+    top:250px;
+    width:150px;
+    right: -70px;
+}
+.mark5{
+    position: absolute;
+    top:500px;
+    width:150px;
+    right: -70px;
+}
+.cardscontainer{
+   
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px;
+    gap: 40px;
+    max-width: 100%;
+    
+}
+.cardscontainer img{
+    border-radius: 50%;
+    width: 100px;
+    padding-top:  10px;
+}
+.card1{
+    border: solid black 1px;
+    
+    border-radius: 100px 100px 20px 20px;
+    min-width: 150px;
+    max-width: 200px;
+    transition: box-shadow 0.1s linear;
+    
+       
+}
+.card1 select{
+    margin: 10px;
+    width: 150px;
+}
+.card1:hover{
+    box-shadow: 0 0 10px 0 rgb(117, 117, 117);
+   
+}
+.card1 button{
+    background-color: red;
+    border: red;
+    border-radius: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.card1 p{
+    font-size: smaller;
+}
+.card1 h5{
+    margin-top: 10px;
+}
+
+.allrights{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20%;
+    
+}
+@media (max-width:750px){
+   
+
+    .nav2{
+        display: none;
+    }
+    .responsive{
+        display:block;
+        text-decoration: none;
+        font-size: larger;
+    }
+    body{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mark3{
+        margin-top: 40px;
+    }
+    .card1{
+        max-width: 200px;
+             
+    }
+    .cardscontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:674px){
+    .maincontainer{
+        height: 1400px;
+        
+    }
+}
+@media (min-width:674px){
+    .maincontainer{
+        height: 1050px;
+        
+    }
+}
+@media (min-width:750px){
+    .maincontainer{
+        height: 700px;
+        
+    }
+}
